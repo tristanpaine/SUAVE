@@ -22,15 +22,15 @@ from SUAVE.Core import Data
 
 class Propfan(Propulsor):
 	def __defaults__(self):
-		self.propeller_front	= None
-		self.propeller_rear		= None
-		self.motor_front		= None
-		self.motor_rear			= None
-		self.esc_front			= None
-		self.esc_rear			= None
-		self.voltage 			= None
-		self.battery			= None
-		self.tag				= 'network'
+		self.propeller_front      = None
+		self.propeller_rear       = None
+		self.motor_front          = None
+		self.motor_rear           = None
+		self.esc_front            = None
+		self.esc_rear             = None
+		self.voltage              = None
+		self.battery              = None
+		self.tag                  = 'network'
 
 	# manage process with a driver function
 	def evalulate_thrust(self,state):
