@@ -36,15 +36,15 @@ class Propfan(Propulsor):
 	def evalulate_thrust(self,state):
 
 		#unpack
-		condition			= state.conditions
-		numerics			= state.numerics
-		propeller_front		= self.propeller_front
-		propeller_rear		= self.propeller_rear
-		motor_front			= self.motor_front
-		motor_rear			= self.motor_rear
-		esc_front			= self.esc_front
-		esc_rear			= self.esc_rear
-		battery				= self.battery
+		conditions        = state.conditions
+		numerics          = state.numerics
+		propeller_front   = self.propeller_front
+		propeller_rear    = self.propeller_rear
+		motor_front       = self.motor_front
+		motor_rear        = self.motor_rear
+		esc_front         = self.esc_front
+		esc_rear          = self.esc_rear
+		battery           = self.battery
 
 		#set battery energy
 		battery.current_energy = condition.propulsion.battery_energy
